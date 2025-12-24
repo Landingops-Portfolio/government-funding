@@ -17,8 +17,10 @@ form.innerHTML = `
       </p><br>
     </header>
 
-    <form action="" id="form_e11" method="POST" target="hidden_iframe11" class="leadform__card" novalidate>
+    <form action="" id="form_e11" method="POST" target="hidden_iframe11"
+          onsubmit="setTimeout(hoa, 1500); submitted=true;" class="leadform__card" novalidate>
       <input type="hidden" name="entry.1767017674" value="유입매체">
+
       <div class="lf__grid">
         <!-- 1. 이름 -->
         <div class="lf__field">
@@ -166,3 +168,4 @@ form.innerHTML = `
 
 <!----form-end------>
 `;
+document.body.appendChild(form.content);
